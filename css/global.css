@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html, body, #root {
+    height: 100vh;
+}
+
+:root {
+    /* general colors */
+    --white: hsl(0, 0%, 100%);
+    --very-blue: hsl(230, 17%, 14%);
+    --lime-green: hsl(163, 72%, 41%);
+    --bright-red: hsl(356, 69%, 56%);
+
+    --facebook-border-color: hsl(208, 92%, 53%);
+    --twitter-border-color: hsl(203, 89%, 53%);
+    --instagram-border-color: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    --youtube-border-color: hsl(348, 97%, 39%);
+
+    /* dark theme colors */
+    --dark-toggle-background: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    --dark-background: hsl(230, 17%, 14%);
+    --dark-top-background: hsl(232, 19%, 15%);
+    --dark-card-background: hsl(228, 28%, 20%);
+    --dark-text: hsl(228, 34%, 66%);
+
+    /* light theme colors */
+    --light-toggle-background: hsl(230, 22%, 74%);
+    --light-top-background: hsl(225, 100%, 98%);
+    --light-card-background: hsl(227, 47%, 96%);
+    --light-text: hsl(228, 12%, 44%);
+
+
+    /* font weights */
+    --medium: 400;
+    --bold: 700;
+
+    /* border radius */
+    --card-border-radius: 8px;
+}
