@@ -1,16 +1,22 @@
+h1, h2, h3 {
+    color: var(--white);
+}
+
+strong {
+    color: var(--dark-text);
+}
+
 header {
     background-color: var(--dark-top-background);
     padding: 2.5rem 1.5rem;
 }
 
-header .dashboard-title {
-    color: var(--white);
+header h2 {
     margin-bottom: 0.3rem;
 }
 
 header strong {
     font-size: 14px;
-    color: var(--dark-text);
 }
 
 header hr {
@@ -52,14 +58,14 @@ main {
     display: grid;
     row-gap: 1.2rem;
 
-    padding: 0 1.5rem;
+    padding: 0 1.5rem 1.5rem;
     background-color: var(--dark-background);
 }
 
 main .card {
     background-color: var(--dark-card-background);
 
-    padding: 1.8rem 1rem;
+    padding: 1.8rem 1.5rem;
     border-radius: var(--card-border-radius);
 
     cursor: pointer;
@@ -112,13 +118,11 @@ main .generic.card .header {
 
     padding-bottom: 1rem;
 
-    color: var(--dark-text);
     font-size: 12px;
 }
 
 main .generic.card h1 {
     font-size: 55px;
-    color: var(--white);
 }
 
 main .generic.card h3 {
@@ -133,7 +137,7 @@ main .generic.card h3 {
 main .generic.card .stats {
     display: flex;
     align-items: center;
-    column-gap: 0.5rem;
+    column-gap: 0.3rem;
     
     padding-top: 1.5rem;
 }
@@ -144,5 +148,49 @@ main .generic.card .stats strong {
 }
 
 main .generic.card:nth-child(4) .stats strong {
+    color: var(--bright-red);
+}
+
+main > h2 {
+    margin-top: 1.5rem;
+}
+
+main .overview.card .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 1.5rem;
+}
+
+main .overview.card .header strong {
+    font-size: 14px;
+}
+
+main .overview.card .stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+main .overview.card .stats h2 {
+    font-size: 35px;
+}
+
+main .overview.card .stats div {
+    display: flex;
+    align-items: center;
+    column-gap: 0.3rem;
+}
+
+main .overview.card .stats div strong {
+    font-size: 12px;
+}
+
+main .overview.card .stats .green {
+    color: var(--lime-green);
+}
+
+main .overview.card .stats .red {
     color: var(--bright-red);
 }
