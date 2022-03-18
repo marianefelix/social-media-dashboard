@@ -1,13 +1,13 @@
 h1, h2, h3 {
-    color: var(--white);
+    color: var(--title-color);
 }
 
 strong {
-    color: var(--dark-text);
+    color: var(--grey-blue);
 }
 
 header {
-    background-color: var(--dark-top-background);
+    background-color: var(--top-background);
     padding: 2.5rem 1.5rem;
 }
 
@@ -21,7 +21,7 @@ header strong {
 
 header hr {
     margin: 1rem 0;
-    border-top: 1px solid var(--dark-text);
+    border-top: 1px solid var(--grey-blue);
     border-bottom: none;
 }
 
@@ -32,7 +32,7 @@ header div {
 }
 
 header div:hover strong {
-    color: var(--white);
+    color: var(--toggle-theme-text-color-hover);
 }
 
 header div button {
@@ -43,18 +43,22 @@ header div button {
     align-items: center;
     padding-left: 0.2rem;
 
-    background: var(--dark-toggle-background);
+    background: var(--toggle-theme-background);
     border-radius: 225px;
     border: none;
 
     cursor: pointer;
 }
 
+header div button:hover {
+    background: var(--toggle-theme-background-hover);
+}
+
 header button span {
     width: 1.2rem;
     height: 1.2rem;
 
-    background-color: var(--dark-background);
+    background-color: var(--background);
 
     border-radius: 50%;
 }
@@ -65,11 +69,11 @@ main {
     row-gap: 1.2rem;
 
     padding: 0 1.5rem 1.5rem;
-    background-color: var(--dark-background);
+    background-color: var(--background);
 }
 
 main .card {
-    background-color: var(--dark-card-background);
+    background-color: var(--card-background);
 
     padding: 1.8rem 1.5rem;
     border-radius: var(--card-border-radius);
@@ -78,7 +82,7 @@ main .card {
 }
 
 main .card:hover {
-    background-color: var(--dark-card-background-hover);
+    background-color: var(--card-background-hover);
 }
 
 main .generic.card {
@@ -135,7 +139,7 @@ main .generic.card h3 {
     font-size: 14px;
     font-weight: var(--medium);
 
-    color: var(--dark-text);
+    color: var(--grey-blue);
     text-transform: uppercase;
     letter-spacing: 5px;
 }
@@ -158,6 +162,7 @@ main .generic.card:nth-child(4) .stats strong {
 }
 
 main > h2 {
+    color: var(--overview-title-color);
     margin-top: 1.5rem;
 }
 

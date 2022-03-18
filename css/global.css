@@ -15,26 +15,13 @@ html, body, #root {
     --very-blue: hsl(230, 17%, 14%);
     --lime-green: hsl(163, 72%, 41%);
     --bright-red: hsl(356, 69%, 56%);
+    --blue-green-gradient: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 
+    /* social media cards colors */
     --facebook-border-color: hsl(208, 92%, 53%);
     --twitter-border-color: hsl(203, 89%, 53%);
     --instagram-border-color: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
     --youtube-border-color: hsl(348, 97%, 39%);
-
-    /* dark theme colors */
-    --dark-toggle-background: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
-    --dark-background: hsl(230, 17%, 14%);
-    --dark-top-background: hsl(232, 19%, 15%);
-    --dark-card-background: hsl(228, 28%, 20%);
-    --dark-card-background-hover: #333A56;
-    --dark-text: #8E94B4;
-
-    /* light theme colors */
-    --light-toggle-background: hsl(230, 22%, 74%);
-    --light-top-background: hsl(225, 100%, 98%);
-    --light-card-background: hsl(227, 47%, 96%);
-    --light-text: hsl(228, 12%, 44%);
-
 
     /* font weights */
     --medium: 400;
@@ -42,4 +29,44 @@ html, body, #root {
 
     /* border radius */
     --card-border-radius: 5px;
+}
+
+body.dark-theme {
+    --grey-blue: #8E94B4;
+
+    --title-color: var(--white);
+
+    --toggle-theme-text-color: var(--grey-blue);
+    --toggle-theme-text-color-hover: var(--white);
+
+    --toggle-theme-background: var(--blue-green-gradient);
+    --toggle-theme-background-hover: var(--blue-green-gradient);
+
+    --background: var(--very-blue);
+    --top-background: hsl(232, 19%, 15%);
+
+    --card-background: hsl(228, 28%, 20%);
+    --card-background-hover: #333A56;
+
+    --overview-title-color: var(--white);
+}
+
+body.light-theme {
+    --grey-blue: hsl(228, 12%, 44%);
+
+    --title-color: var(--very-blue);
+
+    --toggle-theme-text-color: var(--grey-blue);
+    --toggle-theme-text-color-hover: var(--grey-blue);
+
+    --toggle-theme-background: hsl(230, 22%, 74%);
+    --toggle-theme-background-hover: var(--blue-green-gradient);
+    
+    --background: var(--white);
+    --top-background: hsl(225, 100%, 98%);
+    
+    --card-background: hsl(227, 47%, 96%);
+    --card-background-hover: #E1E3F0;
+
+    --overview-title-color: var(--grey-blue);
 }
