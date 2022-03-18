@@ -12,25 +12,42 @@ const getTheme = () => {
     return themeFromLocalStorage;
 }
 
-const toggleTheme = () => {
-    const currentTheme = getTheme();
+
+
+const handleUserPreferenceTheme = (theme) => {
+    const themeOptions = {
+        'light': {
+            'description': 'Dark Mode',
+            'state': 'off'
+        },
+        'dark': {
+            'description': 'Light Mode',
+            'state': 'on'
+        },
+    };
+
+    setTheme(theme);
+
     const themeDescriptionElement = document.getElementById('theme-description');
     const button = document.getElementById('theme-toggle-button');
 
-    if (currentTheme === 'dark') {
-        setTheme('light');
-        
-        document.body.setAttribute('class', 'light-theme');
-        themeDescriptionElement.textContent = 'Dark Mode';
-        button.setAttribute('class', 'off');
-    } else {
-        setTheme('dark');
-
-        document.body.setAttribute('class', 'dark-theme');
-        themeDescriptionElement.textContent = 'Light Mode';
-        button.removeAttribute('class');
-    }
+    document.body.setAttribute('class', `${theme}-theme`);
+    themeDescriptionElement.textContent = themeOptions[theme].description;
+    button.setAttribute('class', themeOptions[theme].state);
 };
 
-setTheme();
+const toggleTheme = () => {
+    const currentTheme = getTheme();
+    let newTheme = '';
 
+    if (currentTheme === 'dark') {
+        newTheme = 'light';
+    } else {
+        newTheme = 'dark';
+    }
+
+    handleUserPreferenceTheme(newTheme);
+};
+
+const currentTheme = getTheme();
+handleUserPreferenceTheme(currentTheme);
