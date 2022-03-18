@@ -41,7 +41,8 @@ header div button {
 
     display: flex;
     align-items: center;
-    padding-left: 0.2rem;
+
+    position: relative;
 
     background: var(--toggle-theme-background);
     border-radius: 225px;
@@ -58,9 +59,19 @@ header button span {
     width: 1.2rem;
     height: 1.2rem;
 
+    position: absolute;
+    left: 0;
+
+    transform: translateX(15%);
+    transition: all 300ms;
+
     background-color: var(--background);
 
     border-radius: 50%;
+}
+
+header div button.off span {
+    transform: translateX(140%);
 }
 
 main {
