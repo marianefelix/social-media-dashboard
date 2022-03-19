@@ -15,146 +15,178 @@
 </head>
 <body>
   <header>
-    <h2>Social Media Dashboard</h2>
-    <strong>Total Followers: 23,004</strong>
+    <h2 tabindex="0">Social Media Dashboard</h2>
+    <strong tabindex="0">Total Followers: 23,004</strong>
     <hr>
     <div>
       <strong id="theme-description"></strong>
-      <button id="theme-toggle-button" title="Toggle theme" onClick="toggleTheme()">
+      <button 
+        id="theme-toggle-button" 
+        aria-label="Toggle theme" 
+        title="Toggle theme" 
+        onClick="toggleTheme()"
+      >
         <span></span>
       </button>
     </div>
   </header>
   <main>
-    <div class="generic card">
+    <div class="generic card" tabindex="0" aria-label="Facebook followers card">
       <div class="header">
-        <img src="images/icon-facebook.svg" alt="Facebook followers" />
+        <img 
+          src="images/icon-facebook.svg" 
+          alt="Facebook logo with a blue color on the background 
+          and the letter f with transparent background" 
+        />
         <strong>@nathanf</strong>
       </div>
       <h1>1987</h1>
-      <h3>Followers</h3>
+      <h2>Followers</h2>
       <div class="stats">
-        <img src="images/icon-up.svg" alt="Arrow up" />
+        <img src="images/icon-up.svg" alt="Green arrow up" />
         <strong>12 Today</strong>
       </div>
     </div>
-    <div  class="generic card">
+    <div  class="generic card" tabindex="0"  aria-label="Twitter followers card">
       <div class="header">
-        <img src="images/icon-twitter.svg" alt="Twitter followers" />
+        <img src="images/icon-twitter.svg" alt="Twitter logo that is a blue bird" />
         <strong>@nathanf</strong>
       </div>
       <h1>1044</h1>
-      <h3>Followers</h3>
+      <h2>Followers</h2>
       <div class="stats">
-        <img src="images/icon-up.svg" alt="Arrow up" />
+        <img src="images/icon-up.svg" alt="Green arrow up" />
         <strong>99 Today</strong>
       </div>
     </div>
-    <div class="generic card">
+    <div class="generic card" tabindex="0"  aria-label="Instagram followers card">
       <hr>
       <div class="header">
-        <img src="images/icon-instagram.svg" alt="Instagram followers" />
+        <img 
+          src="images/icon-instagram.svg" 
+          alt="Instagram logo with a gradient color from light orange 
+          to light pink and a transparent background" 
+        />
         <strong>@realnathanf</strong>
       </div>
       <h1>11k</h1>
-      <h3>Followers</h3>
+      <h2>Followers</h2>
       <div class="stats">
-        <img src="images/icon-up.svg" alt="Arrow up" />
+        <img src="images/icon-up.svg" alt="Green arrow up" />
         <strong>1099 Today</strong>
       </div>
     </div>
-    <div class="generic card">
+    <div class="generic card" tabindex="0"  aria-label="Youtube subscribers card">
       <div class="header">
-        <img src="images/icon-youtube.svg" alt="Youtube subscribers" />
+        <img 
+          src="images/icon-youtube.svg" 
+          alt="A red circle with Youtube logo with transparent background" 
+        />
         <strong>Nathan F.</strong>
       </div>
       <h1>8239</h1>
-      <h3>Subscribers</h3>
+      <h2>Subscribers</h2>
       <div class="stats">
-        <img src="images/icon-down.svg" alt="Arrow down" />
+        <img src="images/icon-down.svg" alt="Red arrow down" />
         <strong>144 Today</strong>
       </div>
     </div>
-    <h2>Overview - Today</h2>
-    <div class="overview card">
+    <h2 tabindex="0">Overview - Today</h2>
+    <div class="overview card" tabindex="0" aria-label="Facebook page views card">
       <div class="header">
         <strong>Page Views</strong>
-        <img src="images/icon-facebook.svg" alt="Facebook page views" />
+        <img 
+          src="images/icon-facebook.svg" 
+          alt="Facebook logo with a blue color on the background 
+          and the letter f with transparent background" 
+        />
       </div>
       <div class="stats">
         <h2>87</h2>
         <div>
-          <img src="images/icon-up.svg" alt="Arrow up" />
+          <img src="images/icon-up.svg" alt="Green arrow up" />
           <strong class="green">3%</strong>
         </div>
       </div>
     </div>
-    <div class="overview card">
+    <div class="overview card" tabindex="0" aria-label="Facebook likes card">
       <div class="header">
         <strong>Likes</strong>
-        <img src="images/icon-facebook.svg" alt="Facebook likes" />
+        <img 
+          src="images/icon-facebook.svg" 
+          alt="Facebook logo with a blue color on the background 
+          and the letter f with transparent background" 
+        />
       </div>
       <div class="stats">
         <h2>52</h2>
         <div>
-          <img src="images/icon-down.svg" alt="Arrow down" />
+          <img src="images/icon-down.svg" alt="Red arrow down" />
           <strong class="red">2%</strong>
         </div>
       </div>
     </div>
-    <div class="overview card">
+    <div class="overview card" tabindex="0" aria-label="Instagram likes card">
       <div class="header">
         <strong>Likes</strong>
-        <img src="images/icon-instagram.svg" alt="Instagram likes" />
+        <img 
+          src="images/icon-instagram.svg" 
+          alt="Instagram logo with a gradient color from light orange 
+          to light pink and a transparent background" 
+        />
       </div>
       <div class="stats">
         <h2>5462</h2>
         <div>
-          <img src="images/icon-up.svg" alt="Arrow up" />
+          <img src="images/icon-up.svg" alt="Green arrow up" />
           <strong class="green">2257%</strong>
         </div>
       </div>
     </div>
-    <div class="overview card">
+    <div class="overview card" tabindex="0" aria-label="Instagram profile views card">
       <div class="header">
         <strong>Profile Views</strong>
-        <img src="images/icon-instagram.svg" alt="Instagram profile views" />
+        <img 
+          src="images/icon-instagram.svg" 
+          alt="Instagram logo with a gradient color from light orange 
+          to light pink and a transparent background" 
+        />
       </div>
       <div class="stats">
         <h2>52k</h2>
         <div>
-          <img src="images/icon-up.svg" alt="Arrow up" />
+          <img src="images/icon-up.svg" alt="Green arrow up" />
           <strong class="green">1375%</strong>
         </div>
       </div>
     </div>
-    <div class="overview card">
+    <div class="overview card" tabindex="0" aria-label="Twitter retweets card">
       <div class="header">
         <strong>Retweets</strong>
-        <img src="images/icon-twitter.svg" alt="Retweets numbers" />
+        <img src="images/icon-twitter.svg" alt="Twitter logo that is a blue bird" />
       </div>
       <div class="stats">
         <h2>117</h2>
         <div>
-          <img src="images/icon-up.svg" alt="Arrow up" />
+          <img src="images/icon-up.svg" alt="Green arrow up" />
           <strong class="green">303%</strong>
         </div>
       </div>
     </div>
-    <div class="overview card">
+    <div class="overview card" tabindex="0" aria-label="Twitter likes card">
       <div class="header">
         <strong>Likes</strong>
-        <img src="images/icon-twitter.svg" alt="Twitter likes" />
+        <img src="images/icon-twitter.svg" alt="Twitter logo that is a blue bird" />
       </div>
       <div class="stats">
         <h2>507</h2>
         <div>
-          <img src="images/icon-up.svg" alt="Arrow up" />
+          <img src="images/icon-up.svg" alt="Green arrow up" />
           <strong class="green">553%</strong>
         </div>
       </div>
     </div>
-    <div class="overview card">
+    <div class="overview card" tabindex="0" aria-label="Youtube likes card">
       <div class="header">
         <strong>Likes</strong>
         <img src="images/icon-youtube.svg" alt="Youtube video likes" />
@@ -162,20 +194,23 @@
       <div class="stats">
         <h2>107</h2>
         <div>
-          <img src="images/icon-down.svg" alt="Arrow down" />
+          <img src="images/icon-down.svg" alt="Red arrow down" />
           <strong class="red">19%</strong>
         </div>
       </div>
     </div>
-    <div class="overview card">
+    <div class="overview card" tabindex="0" aria-label="Youtube total views card">
       <div class="header">
         <strong>Total views</strong>
-        <img src="images/icon-youtube.svg" alt="Youtube video views" />
+        <img 
+          src="images/icon-youtube.svg" 
+          alt="A red circle with Youtube logo with transparent background"
+        />
       </div>
       <div class="stats">
         <h2>1407</h2>
         <div>
-          <img src="images/icon-down.svg" alt="Arrow down" />
+          <img src="images/icon-down.svg" alt="Red arrow down" />
           <strong class="red">12%</strong>
         </div>
       </div>
