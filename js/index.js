@@ -1,9 +1,11 @@
+const themeLocalStorageKey = '@social-media-dashborad-theme';
+
 const setTheme = (theme = 'dark') => {
-    localStorage.setItem('theme', theme);
+    localStorage.setItem(themeLocalStorageKey, theme);
 };
 
 const getTheme = () => {
-    const themeFromLocalStorage = localStorage.getItem('theme');
+    const themeFromLocalStorage = localStorage.getItem(themeLocalStorageKey);
 
     if (themeFromLocalStorage === null) {
         return 'dark';
