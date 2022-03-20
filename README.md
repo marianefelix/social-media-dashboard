@@ -44,11 +44,11 @@ Your users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- JavaScript
+- Semantic HTML5 markup;
+- CSS custom properties;
+- Flexbox;
+- CSS Grid;
+- JavaScript;
 
 ### What I learned
 
@@ -59,7 +59,7 @@ With this challenge I was able to put in practice some concepts about:
 
 ### Useful resources
 
-These contents helped with CSS Grid:
+These content helped me with CSS Grid:
 - [Grid Garden](http://cssgridgarden.com/);
 - [Tutorial youtube video](https://youtu.be/rg7Fvvl3taU);
 
